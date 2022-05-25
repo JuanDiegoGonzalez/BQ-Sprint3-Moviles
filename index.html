@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Athletim</h1>
+        <h2>Type 5 Business Question: What is the sport in which more users are looking for a partner?</h2>
+        <div class="content">
+            <h3>Number of users per sport</h3>
+            <form id="sports-form"></form>
+            <ul id="sports-list"></ul>
+        </div>
+
+        <script>
+            var config = {
+                apiKey: "AIzaSyBf-bAp6e6qD9G0QNpTkHR1pNHVkDen3BU",
+                authDomain: "athletimkotlin.firebaseapp.com",
+                projectId: "athletimkotlin",
+                storageBucket: "athletimkotlin.appspot.com",
+                messagingSenderId: "712590543896",
+                appId: "1:712590543896:web:7c8aafc4d523b74cf8876d",
+                measurementId: "G-5CHVM6KE3N"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
